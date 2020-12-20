@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_launcher_foreground"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteX="-260dp"
+    tools:layout_editor_absoluteY="260dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginBottom="31dp"
+        android:text="@string/welcome_to_my_app"
+        android:textColor="#213F7A"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/xSensorTextView1"
+        app:layout_constraintStart_toStartOf="@+id/xSensorTextView1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/StartSensor"
+        android:layout_width="199dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginBottom="47dp"
+        android:background="#FFC107"
+        android:onClick="StartSesnsorMonitoring"
+        android:shadowColor="#5D32AA"
+        android:text="@string/startSensor"
+        android:textColor="#000000"
+        android:textColorHighlight="#6A3DBA"
+        android:textColorHint="#673AB7"
+        android:textColorLink="#673AB7"
+        app:layout_constraintBottom_toTopOf="@+id/latTextView1"
+        app:layout_constraintStart_toEndOf="@+id/ySensorTextView1"
+        app:layout_constraintTop_toBottomOf="@+id/ySensorTextView1"
+        tools:ignore="OnClick"
+        tools:text="sensormonitoring" />
+
+    <TextView
+        android:id="@+id/xSensorTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="85dp"
+        android:layout_marginLeft="85dp"
+        android:layout_marginBottom="27dp"
+        android:text="@string/x"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/ySensorTextView1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/ySensorTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="17dp"
+        android:text="@string/y"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/StartSensor"
+        app:layout_constraintStart_toStartOf="@+id/xSensorTextView1"
+        app:layout_constraintTop_toBottomOf="@+id/xSensorTextView1" />
+
+    <TextView
+        android:id="@+id/latTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginLeft="72dp"
+        android:layout_marginBottom="37dp"
+        android:text="@string/latitude"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/lngTextView1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/StartSensor" />
+
+    <TextView
+        android:id="@+id/lngTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="@string/longitude"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/StartGPSButton"
+        app:layout_constraintStart_toStartOf="@+id/latTextView1"
+        app:layout_constraintTop_toBottomOf="@+id/latTextView1" />
+
+    <Button
+        android:id="@+id/SwitchToNextScreen"
+        android:layout_width="175dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="99dp"
+        android:background="#FFC107"
+        android:onClick="seeweatherapp"
+        android:text="@string/click_weather"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.601"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/StartGPSButton" />
+
+    <Button
+        android:id="@+id/StartGPSButton"
+        android:layout_width="182dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="109dp"
+        android:background="#FFC107"
+        android:onClick="StartGPS"
+        android:text="@string/start"
+        app:layout_constraintBottom_toTopOf="@+id/SwitchToNextScreen"
+        app:layout_constraintEnd_toEndOf="@+id/StartSensor"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/lngTextView1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

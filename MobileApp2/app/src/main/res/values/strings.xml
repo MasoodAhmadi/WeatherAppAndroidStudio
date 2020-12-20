@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">MobileApp2</string>
+    <string name="button">Button</string>
+    <string name="y">Y:</string>
+    <string name="latitude">latitude:</string>
+    <string name="longitude">longitude:</string>
+    <string name="start">Start</string>
+    <string name="weather_app">Weather App</string>
+    <string name="x">X:</string>
+    <string name="welcome_to_my_app">Welcome to my App</string>
+    <string name="startSensor">startSensor</string>
+    <string name="click_weather">Click_Weather</string>
+    <string name="loading">Loading...</string>
+    <string name="loading1">loading1</string>
+</resources>
